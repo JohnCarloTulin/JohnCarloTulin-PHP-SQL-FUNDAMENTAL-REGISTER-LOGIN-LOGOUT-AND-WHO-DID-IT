@@ -1,5 +1,5 @@
 CREATE TABLE `bicycle_manager_login` (
-  `staff_manager_id` int(100),
+  `staff_manager_id` int(100) AUTO_INCREMENT PRIMARY KEY,
   `username` varchar(1024),
   `password` varchar(1024),
   `first_name` varchar(50),
@@ -7,7 +7,7 @@ CREATE TABLE `bicycle_manager_login` (
 );
 
 CREATE TABLE `bike_store_employees` (
-  `employee_id` int(30),
+  `employee_id` int(30) AUTO_INCREMENT PRIMARY KEY,
   `assigned_job` varchar(50),
   `first_name` varchar(50),
   `last_name` varchar(50),
@@ -17,7 +17,7 @@ CREATE TABLE `bike_store_employees` (
 );
 
 CREATE TABLE `progress_of_employees` (
-  `log_id` int(11),
+  `log_id` int(11) AUTO_INCREMENT PRIMARY KEY,
   `accomplishment_of_employee` varchar(50),
   `description_of_accomplishment` text,
   `employee_id` int(11),
